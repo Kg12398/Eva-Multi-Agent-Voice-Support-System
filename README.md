@@ -121,10 +121,17 @@ Index the solar/inverter manuals into ChromaDB:
 python index_knowledge.py
 ```
 
-### 4. Running the Voice Agent Local Server
-Run the LiveKit worker locally:
+### 4. Running the Backend Services
+You can run the Voice Agent Worker, the FastAPI REST Server, or both in parallel using the master root `main.py` launcher:
 ```bash
-python -m app.main dev
+# To run the LiveKit Voice Agent Worker (Default):
+python main.py
+
+# To run the FastAPI REST Dashboard Backend:
+python main.py api
+
+# To run BOTH services in parallel simultaneously:
+python main.py all
 ```
 
 ---
