@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gauri-voice-agent
+  labels:
+    app: gauri
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: gauri
+  template:
+    metadata:
+      labels:
+        app: gauri
+    spec:
+      containers:
+      - name: agent
+        image: <your-ecr-repo-url>/gauri-voice-agent:latest
+        ports:
+        - containerPort: 8000
+        envFrom:
+        - secretRef:
+            name: gauri-secrets
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "1000m"
+            memory: "2Gi"
+        healthCheck:
+          httpGet:
+            path: /health
+            port: 8000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: gauri-service
+spec:
+  selector:
+    app: gauri
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 8000
+  type: ClusterIP

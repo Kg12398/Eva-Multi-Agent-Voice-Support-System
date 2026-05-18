@@ -1,0 +1,17 @@
+# KG ElectroPower - Solar Panel Maintenance & Safety
+
+## Performance Management
+
+### ISSUE: Low Power Generation (Sunny Day)
+- **Diagnosis**: Shading, dust accumulation, or micro-cracks.
+- **Troubleshooting Steps**:
+  1. Inspect the panel surface for bird droppings or thick dust.
+  2. Clean the panels with plain water and a soft micro-fiber cloth (Early morning only).
+  3. Ensure no new trees or structures are casting a shadow on the array.
+
+### ISSUE: Panel Discoloration (Hotspots)
+- **Diagnosis**: Bypass diode failure or cell damage.
+- **Troubleshooting Steps**:
+  1. Do NOT touch the panel as it may be extremely hot.
+  2. Disconnect the panel from the string if output is zero.
+  3. Schedule a professional thermal imaging inspection.

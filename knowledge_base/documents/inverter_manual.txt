@@ -1,0 +1,25 @@
+# KG ElectroPower - Inverter Troubleshooting Guide
+
+## Common Issues & Solutions
+
+### ISSUE: Continuous Beeping (Red Light Only)
+- **Diagnosis**: Battery level is critically low or there is an overload.
+- **Troubleshooting Steps**:
+  1. Check if heavy appliances like refrigerators or air conditioners are running on the inverter.
+  2. Turn off all heavy loads immediately.
+  3. Check the battery water level. 
+  4. If beeping continues, reset the inverter using the main power switch at the back.
+
+### ISSUE: Inverter Not Turning On
+- **Diagnosis**: Blown fuse or loose battery connection.
+- **Troubleshooting Steps**:
+  1. Check the main fuse at the back of the unit.
+  2. Ensure the DC cables are tightly connected to the battery terminals.
+  3. Check if the battery is completely discharged.
+
+### ISSUE: Low Backup Time
+- **Diagnosis**: Battery aging or sulphation.
+- **Troubleshooting Steps**:
+  1. Check the specific gravity of the battery acid.
+  2. Increase the charging current setting if supported.
+  3. Clean the battery terminals to remove carbon/lead-oxide buildup.

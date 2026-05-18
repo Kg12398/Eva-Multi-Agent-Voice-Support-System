@@ -1,0 +1,74 @@
+# Environment & Secrets
+.env
+.env.local
+.env.production
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+eggs/
+*.egg
+
+# Virtual Environment
+.venv/
+venv/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Docker
+docker-compose.override.yml
+
+# Database
+*.db
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Audio recordings (local)
+recordings/
+
+# ChromaDB local storage
+chroma_db/
+
+# Resolved files
+*.resolved
+
+# Testing
+/test_*.py
+
+# De-clutter root: Ignore temporary/duplicate notes
+/CHEATSHEET.md
+/Gauri_Master_Documentation_v3.md
+/Interview_Testing_AWS_Script.md
+/MASTER_DOCUMENTATION.md
+/ULTIMATE_GAURI_DOCUMENTATION.md
+
+# De-clutter root: Ignore root utility/debug scripts
+/create_dispatch.py
+/flush_redis.py
+/generate_test_link.py
+/health_check.py
+/view_data.py
+
+# Databases & Vector store binaries
+knowledge_base/vector_store/
+*.bin
+knowledge_base/documents/KNowledge Base.pdf
