@@ -1,6 +1,6 @@
 # Deployment Guide — What You Actually Need (and What You Don't)
 
-## The Honest Truth About Your Scale
+## The Honest Truth About Your Scale :
 
 | Your Scale | What Companies Use | What YOU Need |
 |---|---|---|
