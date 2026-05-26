@@ -1,5 +1,5 @@
 """
-🎙️ Gauri Multi-Agent Voice Support Suite — Master Entry Point
+🎙️ EVA- Multi-Agent Voice Support Suite — Master Entry Point
 
 This root-level script provides a unified launcher for all backend services.
 You can run the LiveKit Voice Worker, the FastAPI REST Server, or both simultaneously!
@@ -19,7 +19,7 @@ from multiprocessing import Process
 
 def run_worker():
     """Execute the LiveKit Agent voice pipeline worker."""
-    print("\n🎙️  Starting Gauri LiveKit Voice Agent Worker...")
+    print("\n🎙️  Starting EVA LiveKit Voice Agent Worker...")
     try:
         subprocess.run([sys.executable, "-m", "app.voice_pipeline.livekit_worker", "dev"])
     except KeyboardInterrupt:
