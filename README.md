@@ -161,3 +161,5 @@ To run inside a production **Kubernetes** cluster:
 kubectl apply -f deployment/k8s-deployment.yaml
 ```
 Check our [Deployment Guide](docs/05_deployment_guide.md) for full AWS CloudWatch, SIP trunking, and high-availability setups.
+
+#we will use aws for hosting the application.
