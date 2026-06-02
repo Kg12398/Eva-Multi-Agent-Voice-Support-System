@@ -27,7 +27,7 @@ async def lifespan(app: FastAPI):
     setup_logging(log_level=settings.LOG_LEVEL, json_format=settings.is_production)
     logger.info("Starting KG ElectroPower Voice Agent API...")
 
-    await redis_service.connect()
+    await redis_service.connect() #connect redis in async mode
     await db_service.connect()
     logger.info("All services connected")
 
