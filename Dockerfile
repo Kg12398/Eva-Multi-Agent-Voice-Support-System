@@ -61,3 +61,5 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=5s --retries=3 \
 # Command to run the agent
 # In production, we typically use the entrypoint script or direct python call
 CMD ["python", "-m", "app.voice_pipeline.livekit_worker", "dev"]
+
+# Use kubernetes when your per day call increase to 5000/perday or more
