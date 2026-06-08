@@ -4,6 +4,7 @@ PRACTICAL TEST 3: Decision Agent (Routing Logic + Business Rules + Safety)
 Tests that the Decision Agent makes correct escalate/resolve/continue decisions.
 This agent has hardcoded business rules (bypass LLM) + LLM-powered nuance.
 Run: python tests/test_3_decision_agent.py
+It will decide escalations decision
 """
 
 import asyncio
