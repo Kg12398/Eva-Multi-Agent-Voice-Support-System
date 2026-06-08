@@ -3,6 +3,7 @@ PRACTICAL TEST 1: Conversation Agent (Slot Extraction + Language + Sentiment)
 =============================================================================
 Tests the brain of the voice agent without needing a live phone call.
 Run: python tests/test_1_conversation_agent.py
+Security and Monitoring Layer
 """
 
 import asyncio
