@@ -4,6 +4,7 @@ PRACTICAL TEST 5: Latency Profiler + Security Tests
 Measures real-world latency for each component AND tests
 security guardrails (prompt injection, PII masking).
 Run: python tests/test_5_latency_and_security.py
+Security and monitoring layer
 """
 
 import asyncio
