@@ -3,7 +3,7 @@ version: "3.8"
 # ============================================
 # KG ElectroPower Voice Agent - Local Development
 # ============================================
-# Usage: docker-compose up -d redis postgres
+# Usage: docker-compose up -d redis postgres--------Docker Command
 # This starts only Redis and PostgreSQL for local development.
 # The voice agent runs directly on your machine (not in Docker) during development.
 
