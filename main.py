@@ -19,7 +19,7 @@ from multiprocessing import Process
 
 def run_worker():
     """Execute the LiveKit Agent voice pipeline worker."""
-    print("\n🎙️  Starting EVA LiveKit Voice Agent Worker...")
+    print("\n  Starting EVA LiveKit Voice Agent Worker...")
     try:
         subprocess.run([sys.executable, "-m", "app.voice_pipeline.livekit_worker", "dev"])
     except KeyboardInterrupt:
@@ -28,7 +28,7 @@ def run_worker():
 
 def run_api():
     """Execute the FastAPI server with uvicorn reload."""
-    print("\n🚀 Starting FastAPI REST API Dashboard Server...")
+    print("\n Starting FastAPI REST API Dashboard Server...")
     try:
         import uvicorn
         uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True)
@@ -40,7 +40,7 @@ def run_api():
 
 def run_all():
     """Launch both the LiveKit Worker and FastAPI Server in parallel processes."""
-    print("\n🔥 Starting Gauri System: Voice Worker & FastAPI Server in parallel...")
+    print("\n Starting Gauri System: Voice Worker & FastAPI Server in parallel...")
     
     worker_process = Process(target=run_worker)
     api_process = Process(target=run_api)
